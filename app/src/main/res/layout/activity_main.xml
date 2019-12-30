@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="@dimen/activity_horizontal_margin"
+    tools:context="com.bluetoothchat.MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/status"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Tidak terhubung" />
+
+        <Switch
+            android:id="@+id/switchBT"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="Bluetooth: "
+            android:textOff="OFF"
+            android:textOn="ON" />
+
+        <Button
+            android:id="@+id/paired_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Perangkat terpasang" />
+
+        <Button
+            android:id="@+id/discover_device"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="Cari perangkat tersedia" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="top"
+        android:orientation="vertical">
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:divider="@null"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="1"
+        android:layout_gravity="bottom"
+        android:orientation="horizontal">
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/input_layout"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.8">
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="fill_parent"
+                android:layout_gravity="bottom"
+                android:hint="Masukkan pesan" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_send"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_gravity="bottom"
+            android:layout_weight="0.2"
+            android:text="Kirim" />
+    </LinearLayout>
+</LinearLayout>

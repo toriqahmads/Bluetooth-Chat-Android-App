@@ -1,0 +1,5 @@
+<root>
+    <item name='android.bluetooth.BluetoothDevice'>
+        <annotation name='java.lang.Deprecated' />
+    </item>
+</root>
