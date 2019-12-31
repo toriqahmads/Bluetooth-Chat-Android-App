@@ -10,11 +10,11 @@
         android:layout_gravity="left"
         android:layout_marginBottom="5dp"
         android:layout_marginRight="20dp"
-        android:background="@drawable/textview"
+        android:background="@drawable/textview_left"
         android:paddingBottom="8dp"
         android:paddingLeft="10dp"
         android:paddingRight="10dp"
         android:paddingTop="5dp"
         android:text="Pesan kiri"
-        android:textColor="#000" />
+        android:textColor="#fff" />
 </RelativeLayout>

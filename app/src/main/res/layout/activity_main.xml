@@ -28,14 +28,14 @@
             android:textOff="OFF"
             android:textOn="ON" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/paired_device"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
             android:text="Perangkat terpasang" />
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/discover_device"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -80,12 +80,13 @@
                 android:hint="Masukkan pesan" />
         </com.google.android.material.textfield.TextInputLayout>
 
-        <Button
+        <com.google.android.material.button.MaterialButton
             android:id="@+id/btn_send"
             android:layout_width="0dp"
             android:layout_height="fill_parent"
             android:layout_gravity="bottom"
             android:layout_weight="0.2"
+            android:textSize="10sp"
             android:text="Kirim" />
     </LinearLayout>
 </LinearLayout>

@@ -15,6 +15,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.os.Message;
 import android.os.Handler;
+import android.util.Log;
 import android.view.View;
 import android.widget.AbsListView;
 import android.widget.AdapterView;
@@ -85,6 +86,7 @@ public class MainActivity extends AppCompatActivity {
                         }
                     }
                 }else{
+                    chatSwitch.stop();
                     bluetoothAdapter.disable();
                     setStatus("Tidak terhubung");
                     switchBt.setChecked(false);
